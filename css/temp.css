@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #FCFAEE;
+    --secondary-color: #ECDFCC;
+    --green: #A5B68D;
+    --orange: #DA8359;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: system-ui;
+}
+
+.container {
+    margin: 10px;
+    Padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cont {
+    border: solid 1px var(--green);
+    border-radius: 20px;
+    padding: 25px;
+    padding-inline: 50px;
+    margin: 70px auto 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+}
+
+.cont:hover {
+    background-color: var(--secondary-color);
+}
+
+.head {
+    margin-bottom: 20px;
+    color: var(--orange);
+    text-align: center;
+    font-size: 20px;
+}
+
+.body {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.body span {
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 20px;
+    color: var(--orange);
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content img {
+    width: 100%;
+}
+
+.inside {
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.useful-links a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+.useful-links a:hover {
+    color: var(--orange);
+}
+
+.useful-links li {
+    list-style: none;
+}
+
+.useful-links .head {
+    text-align: left;
+}
+
+.useful-links .body {
+    display: flex;
+}
+
+.useful-links .body .left {
+    margin-right: 100px;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+    text-align: center;
+}
+
+th, td {
+    padding-inline: 15px;
+}
+
+.li {
+    padding-left: 15px;
+}
+
+/* Media Query */
+@media (max-width: 480px) {
+    .container .title {
+        font-size: 20px; 
+    }
+
+    .body {
+        font-size: 16px; 
+    }
+
+    .cont {
+        max-width: 480px;
+        padding: 15px;
+    }
+}
