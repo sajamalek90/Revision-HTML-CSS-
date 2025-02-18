@@ -93,6 +93,7 @@ ul {
 .useful-links a {
     text-decoration: none;
     color: var(--green);
+    font-weight: 600;
 }
 
 .useful-links a:hover {
